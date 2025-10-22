@@ -1,5 +1,4 @@
 def test()-> None:
+    from src.fizz_buzz import fizz_buzz
     fizz_buzz()
 
-def fizz_buzz():
-    pass
