@@ -1,7 +1,9 @@
+from src.fizz_buzz import fizz_buzz
+
 def test()-> None:
-    from src.fizz_buzz import fizz_buzz
     fizz_buzz()
 
-def test_fizzbuzz_returns_number_for_non_multiples():
-    result = fizzbuzz(1)
-    assert result == "1"
+def test_number_3_returns_fizz():
+
+    assert fizz_buzz(3) == "fizz"
+
