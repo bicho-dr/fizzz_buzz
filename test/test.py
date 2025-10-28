@@ -1,15 +1,16 @@
 from src.fizz_buzz import fizz_buzz
+import pytest
 
 
 
-def test_number_3_returns_fizz():
+@pytest.mark.parametrize(
+    "n, expected_result",
+    [
+        (3, "fizz"),
+        (5, "buzz"),
 
-    assert fizz_buzz(3) == "fizz"
-def test_number_5_returns_fizz():
-
-    assert fizz_buzz(5) == "buzz"
-
-def test_number_15_return_fizzbuzz():
-    assert fizz_buzz(15) == "fizzbuzz"
-
+    ]
+)
+def test_FizzBuzz_n_return_expect_result(n: int, expected_result: str):
+    assert fizz_buzz(n) == expected_result
 
