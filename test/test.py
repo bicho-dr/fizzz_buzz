@@ -7,7 +7,11 @@ import pytest
     "n, expected_result",
     [
         (3, "fizz"),
+
         (5, "buzz"),
+
+        (15, "fizzbuzz"),
+
 
     ]
 )
